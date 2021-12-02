@@ -52,58 +52,61 @@ Run `npm install` in the root of the project, if everything went well, node modu
 ```bash
 ~/assignment
 > npm i -g npm # Double check to make sure the right version is installed
-> npm install --legacy-peer-deps
+> npm install
 ```
 
 ### Scripts
 
-Generate the Prisma client
+Run these scripts to setup the project for first use.
+
+#### Generate the Prisma client
 
 ```bash
+~/assignment
+> cd packages/server
 ~/assignment/packages/server
 > npx prisma generate
 ```
 
-Apply migrations
+#### Apply migrations
 
 ```bash
 ~/assignment/packages/server
 > npx prisma migrate dev
 ```
 
-Seed the database
-
-```bash
-~/assignment/packages/server
-> npx prisma db seed
-```
-
-Initialise the ORM
-
-```bash
-~/assignment/packages/server
-> npx prisma generate
-```
-
-Start the webserver
+#### Start the webserver
 
 ```bash
 ~/assignment/packages/server
 > npm start
 ```
 
-View the database in the browser
+#### Start Prisma Studio
 
 ```bash
 ~/assignment/packages/server
 > npx prisma studio
 ```
 
-Start the website
+#### Start the website
 
 ```bash
+~/assignment/packages/server
+> cd ../client
 ~/assignment/packages/client
 > npm run dev
+```
+
+### More scripts
+
+When needed later, these scripts also come in handy:
+
+#### Seed the database
+
+```bash
+~/assignment/packages/server
+> npx prisma db seed
 ```
 
 ### Resources
