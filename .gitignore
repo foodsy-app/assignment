@@ -1,0 +1,6 @@
+.next
+dist
+node_modules
+tsconfig.tsbuildinfo
+dev.db
+dev.db-journal
